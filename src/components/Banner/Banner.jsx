@@ -1,51 +1,46 @@
-import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 const Banner = () => {
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
     return (
         <div className='mt-5'>
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel>
+                <h2>Top Recipes of the day</h2>
+                <p>Sliding recipes are much more tasty as food than sliding images. :D</p>
             <Carousel.Item>
                 <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=First slide&bg=373940"
-                alt="First slide"
+                style={{width: '100%', height: '500px'}}
+                className="d-block"
+                src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000370/img/basic/a0000370_main.jpg?20201002142956"
+                alt="Norimaki Sushi"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>Norimaki Sushi</h3>
+                <p>Sushi rice and seafood, etc. rolled in dried seaweed sheets. There are countless varieties of sushi rolls differing in ingredients and thickness. Sushi rolls prepared "inside out" are very popular outside of Japan, but rarely found in Japan</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=Second slide&bg=282c34"
-                alt="Second slide"
+                style={{width: '100%', height: '500px'}}
+                className="d-block"
+                src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000370/img/basic/a0000370_main.jpg?20201002142956"
+                alt="Norimaki Sushi"
                 />
-
                 <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Norimaki Sushi</h3>
+                <p>Sushi rice and seafood, etc. rolled in dried seaweed sheets. There are countless varieties of sushi rolls differing in ingredients and thickness. Sushi rolls prepared "inside out" are very popular outside of Japan, but rarely found in Japan</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
-                alt="Third slide"
+                style={{width: '100%', height: '500px'}}
+                className="d-block"
+                src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000370/img/basic/a0000370_main.jpg?20201002142956"
+                alt="Norimaki Sushi"
                 />
-
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                </p>
+                <h3>Norimaki Sushi</h3>
+                <p>Sushi rice and seafood, etc. rolled in dried seaweed sheets. There are countless varieties of sushi rolls differing in ingredients and thickness. Sushi rolls prepared "inside out" are very popular outside of Japan, but rarely found in Japan</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
