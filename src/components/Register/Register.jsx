@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const Register = () => {
@@ -62,6 +63,9 @@ const Register = () => {
                 <Button variant="dark" type="submit">
                     Registration
                 </Button>
+                <Link to='/login'>
+                    <Button className='d-block mt-3' variant="link">Already have an account ? Please Login</Button>
+                </Link>
             </Form>
         </div>
     );
