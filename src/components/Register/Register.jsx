@@ -32,6 +32,7 @@ const Register = () => {
             console.log(error);
             setError(error.message);
         })
+
       };
 
     return (
@@ -42,7 +43,7 @@ const Register = () => {
                 <h2>Please Register</h2>
                 <Form.Group controlId="formName" className='mb-3'>
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter name" name="name"/>
+                    <Form.Control type="text" placeholder="Enter name" name="name" required/>
                 </Form.Group>
 
                 <Form.Group controlId="formEmail" className='mb-3'>
@@ -57,7 +58,7 @@ const Register = () => {
 
                 <Form.Group controlId="formPhotoUrl" className='mb-3'>
                     <Form.Label>Photo URL</Form.Label>
-                    <Form.Control type="text" placeholder="Enter photo URL" name="photoUrl"/>
+                    <Form.Control type="text" placeholder="Enter photo URL" name="photoUrl" required/>
                 </Form.Group>
 
                 <Button variant="dark" type="submit">
