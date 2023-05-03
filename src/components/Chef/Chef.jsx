@@ -16,6 +16,8 @@ const Chef = () => {
 
     return (
        <div className='my-5 py-5'>
+        <h2 className='display-6'>Our Top Chefs</h2>
+        <hr className='mb-5'/>
          <Row xs={1} md={2} className="g-5">
           {
             chef.map((c, index) => <Col key={index}>
