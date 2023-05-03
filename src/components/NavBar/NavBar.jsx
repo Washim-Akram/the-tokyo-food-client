@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -16,10 +17,10 @@ const NavBar = () => {
                         <Nav.Link as={Link} to='/'>Home</Nav.Link>
                         <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
                     </Nav>
-                    <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
+                    <Nav className='d-flex flex-column flex-md-row align-items-md-center'>
+                        <Nav.Link as={Link} to='/'>Profile</Nav.Link>
+                        <Nav.Link as={Link} to='/login'>
+                            <Button variant="light" className='px-3 py-1'>Login</Button>
                         </Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
