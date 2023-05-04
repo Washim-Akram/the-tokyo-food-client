@@ -4,25 +4,25 @@ const Banner = () => {
     return (
         <div className='my-5 py-5'>
             <h2 className='display-6'>Top Recipes of the day</h2>
-            <p className='lead'>Sliding recipes are much more tasty as food than sliding images. :D</p>
+            <p className='lead mb-4'>Sliding recipes are much more tasty as food than sliding images. :D</p>
             <Carousel>
                 <Carousel.Item>
                     <img
                     style={{height: '500px'}}
-                    className="d-block w-100"
+                    className="d-block w-100 rounded"
                     src="https://d1nwfvw9iqnfnz.cloudfront.net/filters:autojpg()/filters:quality(80)/fit-in/1024x1024/gowithguide/posts/1549/130289.jpg"
                     alt="Onigiri"
                     />
                     <Carousel.Caption>
                     <h3>Onigiri</h3>
-                    <p>This is the most popular snack in Japan. No matter what time is it, or where you are, if you are hungry and you do not have time, you can buy an onigiri. Onigiris are rice balls seasoned in a variety of ways. Some of them are filled with chicken, vegetables, fish, pork, egg, and can be covered with a piece of seaweed. Some of them have just rice mixed with some sauce, vegetables, beans, furikake, and other simple ingredients. As you can see, you can find a huge variety of flavors for all palates. There are shops that only make onigiris, but aside from those, you can also just grab an onigiri and go from any convenience store or supermarket</p>
+                    <p>This is the most popular snack in Japan. No matter what time is it, or where you are, if you are hungry and you do not have time, you can buy an onigiri. Onigiris are rice balls seasoned in a variety of ways. Some of them are filled with chicken, vegetables, fish, pork, egg, and can be covered with a piece of seaweed. Some of them have just rice mixed with some sauce, vegetables, beans, furikake, and other simple ingredients.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
 
                 <Carousel.Item>
                     <img
                     style={{height: '500px'}}
-                    className="d-block w-100"
+                    className="d-block w-100 rounded"
                     src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000370/img/basic/a0000370_main.jpg?20201002142956"
                     alt="Norimaki Sushi"
                     />
@@ -35,7 +35,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                     style={{height: '500px'}}
-                    className="d-block w-100"
+                    className="d-block w-100 rounded"
                     src="https://d1nwfvw9iqnfnz.cloudfront.net/filters:autojpg()/filters:quality(80)/fit-in/1024x1024/planetyze/guidebook/848/5830.jpg"
                     alt="Sashimi"
                     />

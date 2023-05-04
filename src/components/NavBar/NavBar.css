@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  margin-right: 30px;
+}
+
+a:hover {
+  color: gray;
+}
+
+a.active {
+  color: red;
+  font-weight: 600;
+}

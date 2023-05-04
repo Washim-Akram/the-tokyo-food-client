@@ -22,7 +22,8 @@ const Blog = () => {
                     <p className='fw-medium lead'>
                         The PropTypes utility give us a wide range of validators.
                         Below given the validators name :
-                        <ol>
+                    </p>
+                    <ol className="fw-semibold">
                             <li>Basic types</li>
                             <li>Render able types</li>
                             <li>Instance types</li>
@@ -31,7 +32,6 @@ const Blog = () => {
                             <li>Required types</li>
                             <li>Custom types</li>
                         </ol>
-                    </p>
                 </article>
 
                 <article className='bg-light p-5 rounded-2 mb-5'>
