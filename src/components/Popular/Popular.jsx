@@ -19,7 +19,7 @@ const Popular = () => {
          {
            popular.map((pop) => <Col key={pop.id}>
              <Card className='h-100 p-3'>
-               <Card.Img variant="top" src={pop?.image} style={{height: '300px'}} className='rounded-2'/>
+               <Card.Img variant="top" src={pop?.image} alt={pop?.name} style={{height: '300px'}} className='rounded-2'/>
                <Card.Body>
                  <Card.Text>
                     Category : <span className='text-danger fw-medium fst-italic'>{pop?.category}</span></Card.Text>

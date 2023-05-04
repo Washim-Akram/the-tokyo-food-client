@@ -1,6 +1,7 @@
 import Banner from '../Banner/Banner';
 import Chef from '../Chef/Chef';
 import Popular from '../Popular/Popular';
+import Review from '../Review/Review';
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <Banner></Banner>
             <Chef></Chef>
             <Popular></Popular>
+            <Review></Review>
         </div>
     );
 };

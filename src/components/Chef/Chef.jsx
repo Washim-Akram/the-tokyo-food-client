@@ -22,7 +22,7 @@ const Chef = () => {
           {
             chef.map((c, index) => <Col key={index}>
               <Card>
-                <Card.Img variant="top" src={c?.picture} style={{height: '400px'}}/>
+                <Card.Img variant="top" src={c?.picture} alt={c?.name} style={{height: '400px'}}/>
                 <Card.Body>
                   <Card.Title>{c?.name}</Card.Title>
                   <Card.Text>{c?.experience} years of experience</Card.Text>
