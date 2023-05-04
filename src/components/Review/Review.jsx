@@ -15,9 +15,9 @@ const Review = () => {
         <section className='my-5 py-5'>
             <h2 className='display-6 text-center mb-4'>What they Say</h2>
             <p className='text-center text-secondary mb-5'>Most Valuable comments and reviews from our honorable customers. All types of thoughts, comments and reviews are Acceptable.</p>
-            <Marquee>
+            <Marquee pauseOnHover={true}>
             {
-                reviews.map(review => <Card key={review.id} className='p-3 me-5 text-center' style={{width: '350px', height: '350px'}}>
+                reviews.map(review => <Card key={review.id} className='p-3 me-5 text-center' style={{width: '350px', height: '350px', cursor: 'grab'}}>
                 <Card.Img variant="top" src={review?.image} alt={review?.username} style={{height: '70px', width: '70px'}} className='rounded-circle mx-auto'/>
                 <Card.Body>
                   <Card.Text>{review?.comment}</Card.Text>
