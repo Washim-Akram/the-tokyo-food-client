@@ -3,8 +3,10 @@ import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import LazyLoad from 'react-lazy-load';
 import { useLoaderData } from "react-router-dom";
 import { toast } from 'react-toastify';
+
 
 
 const ChefRecipes = () => {
@@ -20,7 +22,9 @@ const ChefRecipes = () => {
     return (
         <div className="container my-5 py-3">
             <div className="d-flex flex-column flex-md-row gap-5">
-                <img src={picture} alt={name} />
+                <LazyLoad height={400}>
+                    <img src={picture} alt={name} />
+                </LazyLoad>
                 <div>
                 <h2>{name}</h2>
                 <p className="text-secondary" style={{textAlign: 'justify'}}>{bio}</p>
