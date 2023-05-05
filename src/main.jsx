@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import App from './App.jsx';
 import Blog from './components/Blog/Blog.jsx';
+import ChefRecipes from './components/ChefRecipes/ChefRecipes.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import Home from './components/Home/Home.jsx';
 import Login from './components/Login/Login.jsx';
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>,
+      },
+      {
+        path: '/chef/:id',
+        element: <ChefRecipes></ChefRecipes>,
+        loader: ({params}) => fetch(`http://localhost:5000/chef/${params.id}`),
       }
     ]
   },
