@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       {
         path: '/chef/:id',
         element: <PrivateRoute><ChefRecipes></ChefRecipes></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/chef/${params.id}`),
+        loader: ({params}) => fetch(`https://the-tokyo-food-server.vercel.app/chef/${params.id}`),
       }
     ]
   },

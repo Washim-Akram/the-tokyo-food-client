@@ -23,7 +23,7 @@ const ChefRecipes = () => {
         <div className="container my-5 py-3">
             <div className="d-flex flex-column flex-md-row gap-5">
                 <LazyLoad height={400}>
-                    <img src={picture} alt={name} />
+                    <img src={picture} alt={name}/>
                 </LazyLoad>
                 <div>
                 <h2>{name}</h2>

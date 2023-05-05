@@ -57,10 +57,10 @@ const NavBar = () => {
                             <span className='d-flex flex-column flex-md-row align-items-md-center gap-4'>
                                 <img className='rounded-circle' style={{width: '40px', height: '40px', cursor: 'pointer'}} src={photoURL && photoURL} alt="Profile"
                                 title={displayName && displayName} />
-                                <Button onClick={handleLogOut} variant="outline-danger" title='Logout'>Logout</Button>
+                                <Button onClick={handleLogOut} variant="danger" title='Logout'>Logout</Button>
                             </span> :
                                 <Nav.Link as={Link} to='/login'>
-                                    <Button variant="outline-danger" className='px-3 py-1' title='Login'>Login</Button>
+                                    <Button variant="danger" className='px-3 py-1' title='Login'>Login</Button>
                                 </Nav.Link>
                         }
 

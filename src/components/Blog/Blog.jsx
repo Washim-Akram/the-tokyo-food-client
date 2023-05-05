@@ -1,8 +1,12 @@
+import Button from 'react-bootstrap/Button';
 const Blog = () => {
     return (
         <section className="container my-5 py-5">
-            <h2 className='text-center fw-bold mb-5'>Welcome to our blogs!</h2>
+            <h2 className='text-center fw-bold mb-4'>Welcome to our blogs!</h2>
             <div>
+                <div className='d-flex justify-content-end mb-3'>
+                    <Button variant="danger">Download PDF</Button>
+                </div>
                 <article className='bg-light p-5 rounded-2 mb-5'>
                     <h3 className='fw-bold mb-2'>Differences between uncontrolled and controlled components ?</h3>
                     <hr className='mb-3' />
