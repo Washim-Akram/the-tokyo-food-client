@@ -1,13 +1,22 @@
+import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useLoaderData } from "react-router-dom";
+import { toast } from 'react-toastify';
+
 
 const ChefRecipes = () => {
+    const [buttonDisabled, setButtonDisabled] = useState(false);
      const chefData = useLoaderData();
      const {bio, experience, likes, name, number_of_recipes, picture, recipes} = chefData;
-     console.log(chefData);
+
+     const handleFavorite = () => {
+        setButtonDisabled(true);
+        toast("Added to favorite !");
+     }
+
     return (
         <div className="container my-5 py-3">
             <div className="d-flex flex-column flex-md-row gap-5">
@@ -35,7 +44,7 @@ const ChefRecipes = () => {
                             <p className='text-secondary'>{recipe?.cooking_method}</p>
                             <h6>Ratings : <span className='text-warning'>{recipe?.rating}</span></h6>
                         </Card.Body>
-                            <Button variant='success' size='lg'>Favorite</Button>
+                            <Button variant='success' size='lg' onClick={handleFavorite} disabled={buttonDisabled}>Favorite</Button>
                         </Card>
                     </Col>)
                     }

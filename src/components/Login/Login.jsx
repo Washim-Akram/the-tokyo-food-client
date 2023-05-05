@@ -1,14 +1,17 @@
 import { useContext, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
-
 
 const Login = () => {
     const {signIn, signInWithGoogle, signInWithGithub} = useContext(AuthContext);
     const [success, setSuccess] = useState('');
     const [error, setError] = useState('');
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location?.state?.from?.pathname || '/chef/1';
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -24,6 +27,7 @@ const Login = () => {
             const loggedUser = result.user;
             setSuccess("Successfully Login!");
             console.log(loggedUser);
+            navigate(from, { replace: true })
         })
         .catch(error => {
             console.log(error);
@@ -37,6 +41,7 @@ const Login = () => {
             const loggedUser = result.user;
             console.log(loggedUser);
             setSuccess("Successfully Login!");
+            navigate(from, { replace: true })
         })
         .catch(error => {
             console.log(error);
@@ -50,6 +55,7 @@ const Login = () => {
             const loggedUser = result.user;
             console.log(loggedUser);
             setSuccess("Successfully Login!");
+            navigate(from, { replace: true })
         })
         .catch(error => {
             console.log(error);
